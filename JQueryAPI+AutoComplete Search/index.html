@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- RENDER ALL IE BROWSERS AS MICROSOFT EDGE -->
+	 <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- FOR MOBILE DEVELOPMENT - SITE WIDTH = DEVICE WIDTH -->
+	 <meta name="description" content="Moon's Porfolio">
+	 <meta name="author" content="Jeremy Ruggiero">
+
+	 <link href="assets/CSS/Responsive.css" rel="stylesheet"> <!-- load external stylesheet -->
+	 <link href="assets/CSS/Main.css" rel="stylesheet"> <!-- load external stylesheet -->
+	 <link href="assets/CSS/Hover.css" rel="stylesheet"> <!-- load external stylesheet -->
+	 <link rel="icon" href="" sizes="16x16" type="image/png"> <!-- Website Favicon -->
+	 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet"> <!-- load external font -->
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Import Open Source Icons-->
+	 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> <!-- Import Open Source Icons-->
+
+	 <!-- AOS (Animate On Scroll Library) -->
+	 <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+	 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> /* JQUERY LIBRARY */</script>
+	 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"> /* JQuery UI */</script>
+
+
+	 <title>Finder</title>
+</head>
+<body>
+
+<div class="bg"></div>
+<div class="box" data-aos="flip-left">
+	<div class="rim">
+	<form method="post" action=""> 
+		<label for="autocomplete" id="sLabel">
+			<i class="fa fa-github" aria-hidden="true"></i><br>
+			<span class="small">Search GitHub</span>
+		</label>
+		<div class="form-group">
+			<input type="text" id="autocomplete" class="autocomplete" name="search" placeholder="Search..." autocomplete="off" />
+			<button type="submit" name="submit" id="searchbtn"><i class="fa fa-search" aria-hidden="true"></i></button>
+		</div>
+		<small>Finder by <a href="https://github.com/Moon-Hub/" title="Application Author [Moon-Hub]" class="author">Moon-Hub</a></small>
+	</form>
+	</div>
+</div>
+
+<script src="assets/JS/Search.js"></script>
+<script>  
+
+	AOS.init();  /* Initialize AOS Plugin */
+
+	/* Attribute --------------------- Description -------------------------------------------------------------------------------------------------- Example Value|Default Value 
+	
+	   data-aos-offset                   : Change offset to trigger animations sooner or later (px)                                                          : 200 | 120
+	   data-aos-duration                 : Duration of animation (ms)                                                                                        : 600 | 400
+	   data-aos-easing                   : Choose timing function to ease elements in different ways                                                 : ease-in-sine| ease
+	   data-aos-delay                    : Delay animation (ms)                                                                                              : 300 | 0
+	   data-aos-anchor                   : Anchor element, whose offset will be counted to trigger animation instead of actual elements offset         : #selector | null
+	   data-aos-anchor-placement         : Anchor placement - which one position of element on the screen should trigger animation                    : top-center | top-bottom
+	   data-aos-once                     : Choose wheter animation should fire once, or every time you scroll up/down to element                            : true | false
+
+	   Eg.  <div data-aos="fade-up" data-aos-anchor-placement="center-center"></div>
+	        <div data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
+	        <div data-aos="flip-left" data-aos-delay="100" data-aos-anchor=".example-selector">
+
+	    Refer to [https://github.com/michalsnik/aos] for full list of animations
+
+	*/
+
+</script>
+</body>
+</html>
