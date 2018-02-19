@@ -1,0 +1,120 @@
+/* Responsive CSS
+
+	Author: Jeremy Ruggiero
+	Version: v1.0
+
+ */
+
+* {     /* padding and border are included in the total width and height of the elements */
+        box-sizing: border-box;
+        text-decoration: none;
+
+        margin: 0;
+        padding: 0;
+    } 
+
+*:focus { outline: none; }
+
+html, body  {    /* Reset default browser formatting */
+                        margin: 0;
+                        padding: 0;
+            }
+
+
+ /* ================================= Columns [  100% / 12 columns = 8.33% ] ============================= */
+
+/* For mobile phones: */
+[class*="col-"] {
+	width: 100%;
+    float: left;
+    position: relative;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    .col-off-0 {margin-left: 4.165% !important;}
+    .col-off-1 {margin-left: 8.33% !important;}
+    .col-off-2 {margin-left: 16.66% !important;}
+    .col-off-3 {margin-left: 25% !important;}
+    .col-off-4 {margin-left: 33.33% !important;}
+    .col-off-5 {margin-left: 41.66% !important;}
+    .col-off-6 {margin-left: 50% !important;}
+    .col-off-7 {margin-left: 58.33% !important;}
+    .col-off-8 {margin-left: 66.66% !important;}
+    .col-off-9 {margin-left: 75% !important;}
+    .col-off-10 {margin-left: 83.33% !important;}
+    .col-off-11 {margin-left: 91.66% !important;}
+    .col-off-12 {margin-left: 100% !important;}
+}
+
+/* =========================================== EXAMPLE ==================================================================================================== 
+HTML Example
+For desktop:
+
+The first and the third section will both span 3 columns each. The middle section will span 6 columns.
+
+For tablets:
+
+The first section will span 3 columns, the second will span 9, and the third section will be displayed below the first two sections, and it will span 12 columns:
+
+<div class="row">
+<div class="col-3 col-m-3">...</div>
+<div class="col-6 col-m-9">...</div>
+<div class="col-3 col-m-12">...</div>
+</div>
+
+============================================== END EXAMPLE ================================================================================================== */
+
+/* ================================ END Columns ===================================================== */
+/* ================================ START Rows ====================================================== */
+
+.row::after {
+    			content: "";
+    			clear: both;
+    			display: block;
+			}
+
+/* ================================ END Rows ======================================================= */
+/* ================================ START IMG/VIDEO ================================================ */
+
+img {	/* Image will scale down if it has to, but never scale larger than its original size and keeps aspect ratio */
+    	max-width: 100%;
+    	height: auto;
+	}
+
+video {		/* Image will scale up and down and keep aspect ratio */
+    		width: 100%;
+    		height: auto;
+	}
+
+/* ================================ END IMG/VIDEO================================================== */
