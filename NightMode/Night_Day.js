@@ -10,7 +10,8 @@ $(function() {
     var dt = new Date();
     var time = dt.getHours();
 
-    if(time >= 8 && Cookies.get("state" == 0)) {
+    // 24 HOUR TIME
+    if(time >= 20 && Cookies.get("state" == 0)) {
 
         // IF ITS PAST 8PM AND USER HAS NO COOKIE SET CALL FUNCTION NIGHTMODE
         state = 1;
@@ -52,11 +53,10 @@ function nightMode() {
 
         // NIGHTMODE FUNCTION - CHANGE CHECKBOX TO ON (TRUE/1)
         // NIGHTMODE FUNCTION - ADD NIGHT CLASSES & SET COOKIE 
-    
         // EXAMPLES
         $('#nightswtch').prop('checked', true);
         $("body").addClass("darkSwitch-body");
-    
+
         Cookies.set('state', 1, { expires: 7 });
 
 
@@ -65,7 +65,7 @@ function nightMode() {
 function dayMode() {
 
         // DAYMODE FUNCTION - REMOVE NIGHT CLASSES & SET COOKIE 
-        // EXAMPLES 
+        // EXAMPLES
         $("body").removeClass("darkSwitch-body");
         $("#myTopnav").removeClass("darkSwitch-topnav");
 
