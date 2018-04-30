@@ -52,23 +52,11 @@ function nightMode() {
 
         // NIGHTMODE FUNCTION - CHANGE CHECKBOX TO ON (TRUE/1)
         // NIGHTMODE FUNCTION - ADD NIGHT CLASSES & SET COOKIE 
+    
+        // EXAMPLES
         $('#nightswtch').prop('checked', true);
         $("body").addClass("darkSwitch-body");
-        $("#myTopnav").addClass("darkSwitch-topnav");
-        $("#myFooter").addClass("darkSwitch-footer");
-        $("#rmenuitem").addClass("darkSwitch-responsive-menu");
-        $("#myDropdown-content").addClass("darkSwitch-dropdown-content");
-        $("#nm-panel1").addClass("darkSwitch-nm-panel");
-        $("#nm-panel2").addClass("darkSwitch-nm-panel");
-        $("#nm-panel3").addClass("darkSwitch-nm-panel");
-        $("#nm-panel4").addClass("darkSwitch-nm-panel");
-        $("#switch").addClass("darkSwitch-switch");
-        $(".fa").addClass("color");
-        $(".container").addClass("container-darkSwitch");
-        $(".price").addClass("color");
-        $(".bottom").addClass("bottom-darkSwitch");
-
-
+    
         Cookies.set('state', 1, { expires: 7 });
 
 
@@ -77,20 +65,9 @@ function nightMode() {
 function dayMode() {
 
         // DAYMODE FUNCTION - REMOVE NIGHT CLASSES & SET COOKIE 
+        // EXAMPLES 
         $("body").removeClass("darkSwitch-body");
         $("#myTopnav").removeClass("darkSwitch-topnav");
-        $("#myFooter").removeClass("darkSwitch-footer");
-        $("#rmenuitem").removeClass("darkSwitch-responsive-menu");
-        $("#myDropdown-content").removeClass("darkSwitch-dropdown-content");
-        $("#nm-panel1").removeClass("darkSwitch-nm-panel");
-        $("#nm-panel2").removeClass("darkSwitch-nm-panel");
-        $("#nm-panel3").removeClass("darkSwitch-nm-panel");
-        $("#nm-panel4").removeClass("darkSwitch-nm-panel");
-        $("#switch").removeClass("darkSwitch-switch");
-        $(".fa").removeClass("color");
-        $(".container").removeClass("container-darkSwitch");
-        $(".price").removeClass("color");
-        $(".bottom").removeClass("bottom-darkSwitch");
 
         Cookies.set('state', 0, { expires: 7 });
 
